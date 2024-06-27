@@ -5,9 +5,4 @@ resource "azurerm_container_registry" "acr" {
   sku                 = var.sku
   admin_enabled       = false
   anonymous_pull_enabled = true
-  georeplications {
-    location                = var.location
-    zone_redundancy_enabled = false
-    tags                    = {}
-  }
 }
